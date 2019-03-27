@@ -1,0 +1,123 @@
+﻿/* main-css.css */ 
+/* Only to be used for pwManager */
+
+/* Animations */
+@keyframes nav-Hover {
+    to {color: #ff4141;}
+}
+
+@keyframes nav-Active {
+    to {color: #000;}
+}
+
+/* Standard body */
+body {
+    color: #665544;
+
+    height: auto;
+}
+
+/* Middle of page */
+#main-pg {
+    height: 1000px;
+}
+
+/* Top */
+#t {
+    padding: 0;
+
+    border-bottom: 3px solid #efefef;
+
+
+
+    z-index: 10;
+
+}
+
+
+.t_logo {
+    float: left;
+}
+
+/* Top Account */
+.t_account {
+    display: inline;
+    position: relative;
+
+    background-color: #fff;
+
+    margin: 0;
+}
+
+.t_accountLogoDefault {
+    padding: 0;
+
+    margin: 0;
+
+    border: 2px solid #efefef;
+    border-radius: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+
+    -moz-box-shadow: 3px 3px 3px #777;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+}
+
+/* Navigator */
+nav {
+    background-color: #efefef;
+
+    margin-top: 5px;
+}
+
+.n_li {
+    padding: 0;
+}
+
+.n_li-l {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* Pseudo-elements for nav */
+a:hover {
+    -moz-animation-name: nav-Hover;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-fill-mode: forwards;
+
+    -webkit-animation-name: nav-Hover;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Topic */
+.accountPlace {
+    margin: 0;
+}
+
+/* Aside */
+aside {
+    height: 100px;
+
+    background-color: #efefef;
+}
+
+.more_links {
+    text-align: center;
+}
+
+#news_iframe {
+    border: 1px solid #262626;
+}
+
+/* Footer */
+.copyright {
+    background-color: #efefef;
+
+    text-align: center;
+
+    margin: 5px auto;
+}
+
+/* Rest of css inside other scripts. */

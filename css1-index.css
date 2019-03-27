@@ -1,0 +1,17 @@
+﻿/* css1-index.css */
+/* Only to be used in pwManager (index.html)*/
+
+/* About */
+.explanation {
+    background-color: #efefef;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    -moz-box-shadow: 3px 3px 3px #777;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+}
+
+.explanation h3 {
+    color: black;
+}

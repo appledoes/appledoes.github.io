@@ -1,0 +1,15 @@
+{
+  "topic": [
+      {
+        "t_exp": "pwManager is...",
+        "current": true,
+        "type": "h3"
+      },
+      {
+        "b_exp": "A clean, light and reliable password manager that is safe to use and works flawlessly.",
+        "current": true,
+        "type": "h4"
+      }
+  ]
+}
+
