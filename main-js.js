@@ -32,7 +32,7 @@ const importPage = function (page)
     {
         if (xhr1.status === 200)
         {
-            $('mn-content').html = xhr1.response;
+            document.getElementById('mn-content').innerHTML = xhr1.response;
             if (page === 'index') {
                 // Login
                 if (ls.login == 'Guest' || undefined) {
@@ -42,12 +42,9 @@ const importPage = function (page)
                     explanation.addClass('hidden');
                     $topic.text('Welcome back ' + ls.login + '!');
                 };
-            } else if (xhr1.status === 404)
-            {
-                $('mn-content').html = '<p>Error 404. <br />Page couldn' + 't' + 'load!</p>'
             }
         }
-        ;
+        
     };
 
     xhr2.onload = function ()
