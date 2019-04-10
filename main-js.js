@@ -79,7 +79,7 @@ const importPage = function (page)
     xhr1.open('GET', 'htmlBase.html', true);
     xhr1.send(null);
 
-    xhr2.open('GET', 'json/json-index.json', true);
+    xhr2.open('GET', 'json/json1-index.json', true);
     xhr2.send(null);
 }
 
