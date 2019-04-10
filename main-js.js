@@ -30,50 +30,56 @@ const importPage = function (page)
 
     xhr1.onload = function ()
     {
-        document.getElementById('mn-content').innerHTML = xhr1.response;
-        if (page === 'index') {
-            // Login
-            if (ls.login == 'Guest' || undefined) {
-                explanation.addClass('visible');
-                $topic.text('Welcome ' + ls.login + '!');
-            } else {
-                explanation.addClass('hidden');
-                $topic.text('Welcome back ' + ls.login + '!');
-            };
-        };
+        if (xhr1.status === 200)
+        {
+            $('mn-content').html = xhr1.response;
+            if (page === 'index') {
+                // Login
+                if (ls.login == 'Guest' || undefined) {
+                    explanation.addClass('visible');
+                    $topic.text('Welcome ' + ls.login + '!');
+                } else {
+                    explanation.addClass('hidden');
+                    $topic.text('Welcome back ' + ls.login + '!');
+                };
+            } else if (xhr1.status === 404)
+            {
+                $('mn-content').html = '<p>Error 404. <br />Page couldn' + 't' + 'load!</p>'
+            }
+        }
+        ;
     };
 
     xhr2.onload = function ()
     {
-        responseObject = JSON.parse(xhr2.response);
-
-        var $exp_h3 = $('.explanation h3');
-        var $exp_h4 = $('.explanation h4');
-
-        $exp_h3.text(responseObject.topic[0].t_exp);
-        $exp_h4.text(responseObject.topic[1].b_exp);
-
-        if (responseObject.topic[0].weight == "bold")
+        if (xhr2.status === 200)
         {
-            $exp_h3.addClass('bold');
-        } else
-        {
-            $exp_h3.addClass('light');
-        };
+            responseObject = JSON.parse(xhr2.response);
 
-        if (responseObject.topic[1].weight == "bold")
-        {
-            $exp_h4.addClass('bold');
-        } else
-        {
-            $exp_h4.addClass('light');
-        };
+            var $exp_h3 = $('.explanation h3');
+            var $exp_h4 = $('.explanation h4');
+
+            $exp_h3.text(responseObject.topic[0].t_exp);
+            $exp_h4.text(responseObject.topic[1].b_exp);
+
+            if (responseObject.topic[0].weight == "bold") {
+                $exp_h3.addClass('bold');
+            } else {
+                $exp_h3.addClass('light');
+            };
+
+            if (responseObject.topic[1].weight == "bold") {
+                $exp_h4.addClass('bold');
+            } else {
+                $exp_h4.addClass('light');
+            };
+        }
     };
 
     xhr1.open('GET', 'htmlBase.html', true);
     xhr1.send(null);
 
-    xhr2.open('GET', 'json/json1-index.json', true);
+    xhr2.open('GET', 'json/json-index.json', true);
     xhr2.send(null);
 }
 
