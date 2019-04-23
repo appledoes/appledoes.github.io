@@ -47,6 +47,9 @@ const importPage = function (page)
         
     };
 
+    xhr1.open('GET', 'htmlBase.html', true);
+    xhr1.send(null);
+
     xhr2.onload = function ()
     {
         //if (xhr2.status === 200)
@@ -56,37 +59,39 @@ const importPage = function (page)
             var $exp_h3 = $('.explanation h3');
             var $exp_h4 = $('.explanation h4');
 
-            var $a1_h3 = $('.a1-header');
-            var $a1_p1 = $('.a1-p1');
-            var $a1_p2 = $('.a1-p2');
-            var $a1_p3 = $('.a1-p3');
-            var $a1_p4 = $('.a1-p4');
-            var $a1_p5 = $('.a1-p5');
 
-            var $ns1_h3 = $('.ns1-header');
-            var $ns1_p1 = $('.ns1-p1');
-            var $ns1_p2 = $('.ns1-p2');
-            var $ns1_p3 = $('.ns1-p3');
+        
+            var $a1_ul = $('.a1_ul');
+            var $a1_h3 = $('.a1-header');
+
+            function ar(article, type, number)
+            {
+                this.article = article;
+                this.type = type;
+                this.number = number;
+                this.makeli = function ()
+                {
+                    var makeNew = this.article + '_' + this.type + this.number;
+                    var newliItem = $('<li><p class="'+ makeNew +'"></p>')
+                    
+                    return $('a1_ul:last').after(newliItem);
+                }
+            }
+
+
+            //for (i = 1; i < 5; i++) {
+            //    var makeNewli = new ar('a1', 'p', i)
+            //    var makeNewli1 = makeNewli.makeli
+            // }
+            
+
+            
 
             $exp_h3.text(responseObject.topic[0].t_exp);
             $exp_h4.text(responseObject.topic[1].b_exp);
-
-            $a1_h3.text(responseObject.articles[0].header);
-            $a1_p1.text(responseObject.articles[0].p1);
-            $a1_p2.text(responseObject.articles[0].p2);
-            $a1_p3.text(responseObject.articles[0].p3);
-            $a1_p4.text(responseObject.articles[0].p4);
-
-            $ns1_h3.text(responseObject.news[0].header);
-            $ns1_p1.text(responseObject.news[0].p1);
-            $ns1_p2.text(responseObject.news[0].p2)
         //}
         
     };
-
-    xhr1.open('GET', 'htmlBase.html', true);
-    xhr1.send(null);
-
     xhr2.open('GET', 'json/json1-index.json', true);
     xhr2.send(null);
 }

@@ -14,10 +14,10 @@
   "articles": [
     {
       "header": "v1.0 alpha update",
-      "p1": "* New article section",
-      "p2": "* New news section",
-      "p3": "* Bootstrap Layout",
-      "p4": "* First version"
+      "p1": "New article section",
+      "p2": "New news section",
+      "p3": "Bootstrap Layout",
+      "p4": "First version"
     },
     {
       "header": "Why use pwManager?",
