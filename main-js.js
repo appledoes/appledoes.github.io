@@ -73,23 +73,17 @@ const importPage = function (page)
                 {
                     var makeNew = this.article + '_' + this.type + this.number;
                     var newliItem = '<li><p class="' + makeNew + '"></p></li>'
-
-                    console.log(newliItem)
                     
-                    $('.a1-ul:last').add(makeNewli);
+                    $('.a1-ul').append(newliItem);
                 }
             }
 
 
-            for (i = 1; i < 11; i++) {
+            for (i = 1; i > 11; i++) {
                 var makeNewli = new ar('a1', 'p', i)
-                var makeNewli1 = makeNewli.makeli()
-
-
+                makeNewli.makeli()
+                
              }
-            
-
-            
 
             $exp_h3.text(responseObject.topic[0].t_exp);
             $exp_h4.text(responseObject.topic[1].b_exp);
