@@ -17,11 +17,6 @@ body {
     height: auto;
 }
 
-/* Middle of page */
-#main-pg {
-    height: 1000px;
-}
-
 /* Top */
 #t {
     padding: 0;
@@ -96,20 +91,47 @@ a:hover {
     margin: 0;
 }
 
+#topic {
+    margin-bottom: 3px;
+}
+
 /* Aside */
 aside {
-    height: 100px;
+    height: auto;
 
     background-color: #efefef;
 }
 
-.more_links {
-    text-align: center;
+.news_section {
+    margin-top: -36px;
 }
 
-#news_iframe {
-    border: 1px solid #262626;
+.ns1 {
+    padding: 2px;
 }
+
+.more_links {
+    text-align: center;
+
+    padding-bottom: 3px;
+
+    border-bottom: 1px solid #000;
+}
+
+/* Articles */
+.articles {
+    margin: 5px auto;
+}
+
+.article {
+    background-color: #efefef;
+    padding: 3px;
+}
+
+.article-row {
+    margin-bottom: 36px;
+}
+
 
 /* Footer */
 .copyright {
@@ -118,6 +140,12 @@ aside {
     text-align: center;
 
     margin: 5px auto;
+}
+
+
+.foot-span2 {
+    float: right;
+    color: #a0a0a0
 }
 
 /* Rest of css inside other scripts. */

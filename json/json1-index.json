@@ -1,15 +1,36 @@
 {
   "topic": [
-      {
-        "t_exp": "pwManager is...",
-        "current": true,
-        "type": "h3"
-      },
-      {
-        "b_exp": "A clean, light and reliable password manager that is safe to use and works flawlessly.",
-        "current": true,
-        "type": "h4"
-      }
+    {
+      "t_exp": "pwManager is...",
+      "current": true,
+      "type": "h3"
+    },
+    {
+      "b_exp": "A clean, light and reliable password manager that is safe to use and works flawlessly.",
+      "current": true,
+      "type": "h4"
+    }
+  ],
+  "articles": [
+    {
+      "header": "v1.0 alpha update",
+      "p1": "* New article section",
+      "p2": "* New news section",
+      "p3": "* Bootstrap Layout",
+      "p4": "* First version"
+    },
+    {
+      "header": "Why use pwManager?",
+      "p1": "You should use it, because it is safe, secure and easy to use!",
+      "p2": "And because it doesn't spy on you!"
+    }
+  ],
+  "news": [
+    {
+      "header": "pwManager will be presented at the coolest projects!",
+      "p1": "If you want to go and see this masterpiece at the coolest projects, you can go to the RDS Main Hall, Dublin, Ireland on May 5th, 2019! ",
+      "p2": "Go to the website section to try find it."
+    }
   ]
 }
 
