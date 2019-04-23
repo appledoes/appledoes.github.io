@@ -61,7 +61,7 @@ const importPage = function (page)
 
 
         
-            var $a1_ul = $('.a1_ul');
+            var $a1_ul = $('.a1-ul');
             var $a1_h3 = $('.a1-header');
 
             function ar(article, type, number)
@@ -72,17 +72,21 @@ const importPage = function (page)
                 this.makeli = function ()
                 {
                     var makeNew = this.article + '_' + this.type + this.number;
-                    var newliItem = $('<li><p class="'+ makeNew +'"></p>')
+                    var newliItem = '<li><p class="' + makeNew + '"></p></li>'
+
+                    console.log(newliItem)
                     
-                    return $('a1_ul:last').after(newliItem);
+                    $('.a1-ul:last').add(makeNewli);
                 }
             }
 
 
-            //for (i = 1; i < 5; i++) {
-            //    var makeNewli = new ar('a1', 'p', i)
-            //    var makeNewli1 = makeNewli.makeli
-            // }
+            for (i = 1; i < 11; i++) {
+                var makeNewli = new ar('a1', 'p', i)
+                var makeNewli1 = makeNewli.makeli()
+
+
+             }
             
 
             
