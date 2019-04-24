@@ -110,6 +110,10 @@ aside {
     padding: 2px;
 }
 
+.ns-ul {
+    padding: 0
+}
+
 .more_links {
     text-align: center;
 
@@ -132,6 +136,9 @@ aside {
     margin-bottom: 36px;
 }
 
+.a-ul {
+    padding: 0
+}
 
 /* Footer */
 .copyright {
@@ -146,6 +153,15 @@ aside {
 .foot-span2 {
     float: right;
     color: #a0a0a0
+}
+
+/* misc. */
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
 }
 
 /* Rest of css inside other scripts. */
