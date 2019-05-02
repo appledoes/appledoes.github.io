@@ -3,7 +3,7 @@
 
 /* About */
 .explanation {
-    background-color: #efefef;
+    background-color: #0094ff;
     padding: 10px;
     margin-bottom: 10px;
 
@@ -13,5 +13,9 @@
 }
 
 .explanation h3 {
-    color: black;
+    color: white;
+}
+
+.explanation h4 {
+    color: white
 }
