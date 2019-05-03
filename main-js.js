@@ -133,7 +133,13 @@ const importPage = function (page)
                 makeNewli.makeli();
             };
 
-            if (responseObject.articles[0].header == undefined)
+
+            $a1_h3.text(responseObject.articles[0].header);
+            $a2_h3.text(responseObject.articles[1].header);
+            $ns1_h3.text(responseObject.news[0].header);
+            $ns2_h3.text(responseObject.news[1].header);
+
+            if (responseObject.articles[0].header == null)
             {
                 console.log('working ([0] li)');
                 $a1_h3.text('Sorry');
@@ -143,7 +149,8 @@ const importPage = function (page)
                 });
             };
 
-            if (responseObject.articles[1].header == undefined) {
+            if (responseObject.articles[1].header == null)
+            {
                 console.log('working ([1] li)');
                 $a2_h3.text('Sorry');
                 $('.a2-ul').replaceWith('<p>Sorry, This article has not been written yet</p><br /> <p>😢</p>')
@@ -152,7 +159,8 @@ const importPage = function (page)
                 });
             };
 
-            if (responseObject.articles[2].header == undefined) {
+            if (responseObject.articles[2].header == null)
+            {
                 console.log('working ([2] li)');
                 $a3_h3.text('Sorry');
                 $('.a3-ul').replaceWith('<p>Sorry, This article has not been written yet</p><br /> <p>😢</p>')
@@ -161,7 +169,8 @@ const importPage = function (page)
                 });
             };
 
-            if (responseObject.articles[3].header == undefined) {
+            if (responseObject.articles[3].header == null)
+            {
                 console.log('working ([3] li)');
                 $a4_h3.text('Sorry');
                 $('.a4-ul').replaceWith('<p>Sorry, This article has not been written yet</p><br /> <p>😢</p>')
@@ -169,43 +178,6 @@ const importPage = function (page)
                     'text-align': 'center'
                 });
             };
-
-            if (responseObject.articles[4].header == undefined) {
-                console.log('working ([4] li)');
-                $a5_h3.text('Sorry');
-                $('.a5-ul').replaceWith('<p>Sorry, This article has not been written yet</p><br /> <p>😢</p>');
-                $('.article-5').css({
-                    'text-align': 'center'
-                });
-            };
-
-            if (responseObject.articles[5].header == undefined) {
-                console.log('working ([5] li)');
-                $a6_h3.text('Sorry');
-                $('.a6-ul').replaceWith('<p>Sorry, This article has not been written yet</p><br /> <p>😢</p>')
-                $('.article-6').css({
-                    'text-align': 'center'
-                });
-            };
-
-            if (responseObject.articles[6].header == undefined) {
-                console.log('working ([6] li)');
-                $a7_h3.text('Sorry');
-                $('.a7-ul').replaceWith('<p>Sorry, This article has not been written yet</p><br /> <p>😢</p>')
-                $('.article-7').css({
-                    'text-align': 'center'
-                });
-            };
-
-            if (responseObject.articles[7].header == undefined) {
-                console.log('working ([7] li)');
-                $a8_h3.text('Sorry');
-                $('.a8-ul').replaceWith('<p>Sorry, This article has not been written yet</p><br /> <p>😢</p>')
-                $('.article-8').css({
-                    'text-align': 'center'
-                });
-            };
-
 
             $('.a1_p1').text(responseObject.articles[0].p1);
             $('.a1_p2').text(responseObject.articles[0].p2);
@@ -226,11 +198,6 @@ const importPage = function (page)
 
             $('.whr1_header').text(responseObject.whr[0].header);
             $('.whr1_desc').text(responseObject.whr[0].desc);
-       
-            $a1_h3.text(responseObject.articles[0].header);
-            $a2_h3.text(responseObject.articles[1].header);
-            $ns1_h3.text(responseObject.news[0].header);
-            $ns2_h3.text(responseObject.news[1].header);
         //}
         
     };
