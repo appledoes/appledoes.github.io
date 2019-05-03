@@ -8,7 +8,7 @@
     {
       "b_exp": "A clean, light and reliable password manager that is safe to use and works flawlessly.",
       "current": true,
-      "type": "h4"
+      "type": "h4" 
     }
   ],
   "articles": [
@@ -20,16 +20,37 @@
       "p4": "First version"
     },
     {
-      "header": "Why use pwManager?",
-      "p1": "You should use it, because it is safe, secure and easy to use!",
-      "p2": "And because it doesn't spy on you!"
+      "header": null
+    },
+    {
+      "header":  null
+    },
+    {
+      "header":  null
     }
   ],
   "news": [
     {
+      "header": "pwManager's official release date is announced!",
+      "p1": "The official release date is scheduled to be on May 5th!",
+      "p2": "The day of the coolest projects"
+    },
+
+    {
       "header": "pwManager will be presented at the coolest projects!",
       "p1": "If you want to go and see this masterpiece at the coolest projects, you can go to the RDS Main Hall, Dublin, Ireland on May 5th, 2019! ",
       "p2": "Go to the website section to try find it."
+    }
+  ],
+  "whr": [
+    {
+      "header": "About pwmanager, ",
+      "desc": "pwManager is free, safe to use, and works flawlessly."
+
+    },
+    {
+      "header": "Loyalty membership,",
+      "desc": "The loyalty membership is honored to people who the creator knows or the people who assisted in creating this. Want to see if you are eligible? Go to the contact page to send me an email."
     }
   ]
 }
