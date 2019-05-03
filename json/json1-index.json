@@ -39,18 +39,31 @@
     {
       "header": "pwManager will be presented at the coolest projects!",
       "p1": "If you want to go and see this masterpiece at the coolest projects, you can go to the RDS Main Hall, Dublin, Ireland on May 5th, 2019! ",
-      "p2": "Go to the website section to try find it."
+      "p2": "Go to the website section to try find it.",
+      "a1":  "https://coolestprojects.org"
     }
   ],
   "whr": [
     {
-      "header": "About pwmanager, ",
-      "desc": "pwManager is free, safe to use, and works flawlessly."
+      "header": "Free Membership, ",
+      "desc": "The Free Membership is the first type of membership in pwManager, it is given to everybody."
 
     },
     {
       "header": "Loyalty membership,",
       "desc": "The loyalty membership is honored to people who the creator knows or the people who assisted in creating this. Want to see if you are eligible? Go to the contact page to send me an email."
+    },
+    {
+      "header": "What can you get with Free Membership?",
+      "desc":  "With Free Membership, you can have up to 100 passwords stored! Pretty much that."
+    },
+    {
+      "header": "What can you get with Loyalty Membership?",
+      "desc": "With Loyalty Membership you can get unlimited passwords, a custom account logo, access to WIP tools, and more!"
+    },
+    {
+      "header": "Sign up Now!",
+      "desc": "Signing up is easy, all you have to do is click on Account in the navigator."
     }
   ]
 }

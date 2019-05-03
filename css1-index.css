@@ -19,3 +19,106 @@
 .explanation h4 {
     color: white
 }
+
+/* Topic */
+.accountPlace {
+    margin: 0;
+}
+
+#topic {
+    margin-bottom: 3px;
+}
+
+/* Aside */
+aside {
+    background-color: #efefef;
+}
+
+.news_section {
+    margin-top: -36px;
+}
+
+.news_aside {
+    height: 188.8px;
+    overflow: auto;
+}
+
+
+.ns {
+    padding: 2px;
+    margin: auto 1px 20px;
+    border: 1px solid #525252;
+}
+
+.ns-ul {
+    padding: 0
+}
+
+.more_links {
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #000;
+}
+
+/* Articles */
+.articles {
+    padding: 0;
+    margin: 5px auto;
+}
+
+.article {
+    height: 188.8px;
+    background-color: #efefef;
+    padding: 3px;
+    overflow: auto;
+}
+
+.a-ul {
+    padding: 0
+}
+
+
+/* Why row */
+.why_row {
+    margin: 10px auto
+}
+
+.why_row0 {
+    height: auto;
+    background-color: #efefef;
+    padding: 10px;
+    margin: auto auto 7px;
+    -moz-box-shadow: 3px 3px 3px #777;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+}
+
+.why_row0 h3 {
+    color: white
+}
+
+.why_row0 h4 {
+    color: white
+}
+
+.why_row_1 {
+    background-color: #ff0000;
+}
+
+.why_row_2 {
+    background-color: #00ff6c;
+}
+
+.why_row_3 {
+    background-color: #9a00ff;
+}
+
+.why_row_4 {
+    background-color: #ffe100;
+}
+
+.why_row_5 {
+    background-color: aquamarine;
+
+    margin-top: 30px;
+}
