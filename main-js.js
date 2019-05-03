@@ -19,7 +19,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 8w2')
+console.log('SNAPSHOT 8w4')
 
 // [[ Variables ]] //
 
@@ -44,8 +44,8 @@ const importPage = function (page)
 
     xhr1.onload = function ()
     {
-        //if (xhr1.status === 200)
-        //{
+        if (xhr1.status === 200)
+        {
             document.getElementById('mn-content').innerHTML = xhr1.response;
             if (page === 'index') {
                 // Login
@@ -57,7 +57,7 @@ const importPage = function (page)
                     $topic.text('Welcome back ' + ls.login + '!');
                 };
             };
-        //}
+        }
         
     };
 
@@ -65,8 +65,8 @@ const importPage = function (page)
 
     xhr2.onload = function ()
     {
-        //if (xhr2.status === 200)
-        //{
+        if (xhr2.status === 200)
+        {
             responseObject = JSON.parse(xhr2.response);
 
             var $exp_h3 = $('.explanation h3');
@@ -201,7 +201,7 @@ const importPage = function (page)
 
             $ns1_h3.text(responseObject.news[0].header);
             $ns2_h3.text(responseObject.news[1].header);
-        //}
+        }
         
     };
     xhr1.open('GET', 'htmlBase.html', true);
