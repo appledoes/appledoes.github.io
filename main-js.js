@@ -4,17 +4,17 @@
 // Uses jQuery //
 
 // Initialize Firebase
-var config = {
-    apiKey: "AIzaSyBnrAhY_w3VVnjHc2_UeJJAt2G-FWpAjwM",
-    authDomain: "pwmanager-91c7e.firebaseapp.com",
-    databaseURL: "https://pwmanager-91c7e.firebaseio.com",
-    projectId: "pwmanager-91c7e",
-    storageBucket: "pwmanager-91c7e.appspot.com",
-    messagingSenderId: "200620870742"
-};
-firebase.initializeApp(config);
+//var config = {
+//    apiKey: "AIzaSyBnrAhY_w3VVnjHc2_UeJJAt2G-FWpAjwM",
+//    authDomain: "pwmanager-91c7e.firebaseapp.com",
+//    databaseURL: "https://pwmanager-91c7e.firebaseio.com",
+//    projectId: "pwmanager-91c7e",
+//    storageBucket: "pwmanager-91c7e.appspot.com",
+//    messagingSenderId: "200620870742"
+//};
+//firebase.initializeApp(config);
 
-var database = firebase.database();
+//var database = firebase.database();
 
 // [[ Title ]] //
 var $title = $('title').text();
@@ -137,7 +137,7 @@ const importPage = function (page)
             $a1_h3.text(responseObject.articles[0].header);
             $a2_h3.text(responseObject.articles[1].header);
             $ns1_h3.text(responseObject.news[0].header);
-            //$ns2_h3.text(responseObject.news[1].header);
+            $ns2_h3.text(responseObject.news[1].header);
 
             if (responseObject.articles[0].header == null)
             {
