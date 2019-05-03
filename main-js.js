@@ -137,7 +137,7 @@ const importPage = function (page)
             $a1_h3.text(responseObject.articles[0].header);
             $a2_h3.text(responseObject.articles[1].header);
             $ns1_h3.text(responseObject.news[0].header);
-            $ns2_h3.text(responseObject.news[1].header);
+            //$ns2_h3.text(responseObject.news[1].header);
 
             if (responseObject.articles[0].header == null)
             {
@@ -198,6 +198,8 @@ const importPage = function (page)
 
             $('.whr1_header').text(responseObject.whr[0].header);
             $('.whr1_desc').text(responseObject.whr[0].desc);
+            $('.whr2_header').text(responseObject.whr[1].header);
+            $('.whr2_desc').text(responseObject.whr[1].desc);
         //}
         
     };
