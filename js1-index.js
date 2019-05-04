@@ -1,7 +1,7 @@
 ﻿// js1-index.js //
 
 (function () {
-    setTimeout(function () { $('.contact-row').css({ 'display': 'none' }); $('.about-row').css({'display': 'none'}) }, 350)
+    setTimeout(function () { $('.contact-row').css({ 'display': 'none' }); $('.about-row').css({ 'display': 'none' }); $('.account-row').css({ 'display': 'none' }) }, 350)
 
     var xhr2 = new XMLHttpRequest();
 
