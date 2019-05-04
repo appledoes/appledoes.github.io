@@ -7,7 +7,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 1w6')
+console.log('SNAPSHOT 1w7')
 
 // [[ Variables ]] //
 
@@ -48,6 +48,13 @@ const importPage = function (page)
 }
 
 
+function writeUserData(userId, name, email, memberType) {
+    firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        memberType: memberType
+    });
+}
 
 // [[ Check which title ]] //
 if ($title === 'Homepage | pwManager')
@@ -68,6 +75,10 @@ if ($title === 'Homepage | pwManager')
             }
         }
     })
+
+} else if ($title === 'Account | pwManager') {
+    importPage('account')
+
 } else if ($title === 'About | pwManager')
 {
     importPage('about')
