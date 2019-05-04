@@ -7,7 +7,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 1w4')
+console.log('SNAPSHOT 1w5')
 
 // [[ Variables ]] //
 
@@ -34,16 +34,6 @@ const importPage = function (page)
         if (xhr1.status === 200)
         {
             document.getElementById('mn-content').innerHTML = xhr1.response;
-            if (page === 'index') {
-                // Login
-                if (ls.login == 'Guest' || undefined) {
-                    explanation.addClass('visible');
-                    $topic.text('Welcome ' + ls.login + '!');
-                } else {
-                    explanation.addClass('hidden');
-                    $topic.text('Welcome back ' + ls.login + '!');
-                };
-            };
         }
         
     };
@@ -61,20 +51,13 @@ const importPage = function (page)
 if ($title === 'Homepage | pwManager')
 {
     importPage('index');
-
-
-    // Explanation and Topic
-    if (ls.login == undefined) {
-        console.error('No user login could be found, signed in as guest');
-
-        localStorage.setItem('login', 'Guest');
-    } else if (ls.login == 'Guest') {
-        console.log('Signed in as Guest');
-    } else {
-        console.log('Signed in as ' + ls.login);
-
-    };
-
+    firebase.auth().onAuthStateChanged(function (user) {
+        if (user) {
+            console.log('logged in as: ' + user.displayName)
+        }
+    })
+} else if ($title === 'About | pwManager')
+{
 
 } else if ($title === 'Contact | pwManager')
 {

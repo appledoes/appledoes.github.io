@@ -1,7 +1,7 @@
 ﻿// js1-index.js //
 
 (function () {
-    setTimeout(function () { $('.contact-row').addClass('hidden'); }, 250)
+    setTimeout(function () { $('.contact-row').css({'display': 'none'}) }, 350)
 
     var xhr2 = new XMLHttpRequest();
 
@@ -156,3 +156,7 @@
     xhr2.open('GET', 'json/json1-index.json', true);
     xhr2.send(null);
 })()
+
+
+
+
