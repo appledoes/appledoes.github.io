@@ -1,7 +1,4 @@
 // signup-fireBase.js //
-
-var app_fireBase = {};
-
 (function () {
     // Initialize Firebase
 
@@ -14,6 +11,4 @@ var app_fireBase = {};
         messagingSenderId: "200620870742"
     };
     firebase.initializeApp(config);
-
-    app_fireBase = firebase;
 })()
