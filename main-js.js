@@ -7,7 +7,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 1w5')
+console.log('SNAPSHOT 1w6')
 
 // [[ Variables ]] //
 
@@ -60,11 +60,12 @@ if ($title === 'Homepage | pwManager')
             $('.accountPlace').text('Welcome back ' + user.displayName + '!')
             $('.explanation').css({'display': 'none'})
 
+
+        } else {
+            $('.accountPlace').text('Welcome Guest!')
             if (firebase.database().ref(user.uid) == undefined) {
                 console.log('test')
             }
-        } else {
-            $('.accountPlace').text('Welcome Guest!')
         }
     })
 } else if ($title === 'About | pwManager')
