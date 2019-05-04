@@ -56,6 +56,12 @@
                 makeNewli.makeli();
             };
 
+            for (i = 1; i < 5; i++) {
+                var makeNewli = new ar('a3', 'p', i, '.a3-ul', 'block', undefined);
+
+                makeNewli.makeli();
+            };
+
             for (i = 1; i < 3; i++) {
                 var makeNewli = new ar('ns1', 'p', i, '.ns1-ul', 'inline', undefined);
 
@@ -77,6 +83,7 @@
 
             $a1_h3.text(responseObject.articles[0].header);
             $a2_h3.text(responseObject.articles[1].header);
+            $a3_h3.text(responseObject.articles[2].header);
 
             if (responseObject.articles[0].header == null) {
                 console.log('working ([0] li)');
@@ -123,6 +130,12 @@
             $('.a2_p2').text(responseObject.articles[1].p2);
             $('.a2_p3').text(responseObject.articles[1].p3);
             $('.a2_p4').text(responseObject.articles[1].p4);
+
+
+            $('.a3_p1').text(responseObject.articles[2].p1);
+            $('.a3_p2').text(responseObject.articles[2].p2);
+            $('.a3_p3').text(responseObject.articles[2].p3);
+            $('.a3_p4').text(responseObject.articles[2].p4);
 
             $('.ns1_p1').text(responseObject.news[0].p1);
             $('.ns1_p2').text(responseObject.news[0].p2);

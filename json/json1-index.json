@@ -13,12 +13,19 @@
   ],
   "articles": [
     {
+      "header": "v1.2 alpha update",
+      "p1": "New webpage (about)",
+      "p2": "Signup",
+      "p3": "Bug fixes",
+      "p4": ""
+
+    },
+    {
       "header": "v1.1 alpha update",
       "p1": "New webpage",
       "p2": "Bug fixes",
       "p3": "MOAR COLORS",
       "p4": "New type of news section"
-
     },
     {
       "header": "v1.0 alpha update",
@@ -26,9 +33,6 @@
       "p2": "New news section",
       "p3": "Bootstrap Layout",
       "p4": "First version"
-    },
-    {
-      "header":  null
     },
     {
       "header":  null
