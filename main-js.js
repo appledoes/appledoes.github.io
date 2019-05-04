@@ -7,7 +7,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 1w6')
+console.log('SNAPSHOT 1w7')
 
 // [[ Variables ]] //
 
@@ -47,6 +47,8 @@ const importPage = function (page)
 
 }
 
+
+
 // [[ Check which title ]] //
 if ($title === 'Homepage | pwManager')
 {
@@ -59,7 +61,7 @@ if ($title === 'Homepage | pwManager')
     })
 } else if ($title === 'About | pwManager')
 {
-
+    importPage('about')
 } else if ($title === 'Contact | pwManager')
 {
     importPage('contact');

@@ -14,8 +14,45 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1" />
 
     <title>About | pwManager</title>
+
+    <!-- Import main-css.css -->
+    <link rel="stylesheet" type="text/css" href="main-css.css" />
+
+    <!-- Import css4-about.css -->
+    <link rel="stylesheet" type="text/css" href="css4-about.css" />
+
+    <!-- Import BS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Import favicon.ico -->
+    <link rel="icon" href="favicon.ico" />
 </head>
 <body>
+    <div class="container">
+        <div id="mn-content">
+            <p></p>
+        </div>
+    </div>
 
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.11.1/firebase-firestore.js"></script>
+
+    <!-- Import jquery-3.3.1.min.js -->
+    <script src="jquery-3.3.1.min.js"></script>
+    <!-- Import main-js.js -->
+    <script src="main-js.js"></script>
+    <!-- Import js4-about.js -->
+    <script src="js4-about.js"></script>
+    <!-- Import BS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Import signup-fireBase.js -->
+    <script src="account/signup-fireBase.js"></script>
 </body>
 </html>

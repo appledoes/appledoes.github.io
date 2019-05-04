@@ -1,0 +1,27 @@
+﻿body
+{
+}
+
+.top_row0 {
+    height: auto;
+    background-color: #efefef;
+    padding: 10px;
+    margin: auto auto 7px;
+    -moz-box-shadow: 3px 3px 3px #777;
+    -webkit-box-shadow: 3px 3px 3px #777;
+    box-shadow: 3px 3px 3px #777;
+}
+
+.top_row_1 {
+    background-color: blueviolet;
+
+    margin-bottom: 15px;
+}
+
+.top_row_1 h2 {
+    color: white;
+}
+
+.top_row_2 {
+    text-align: center;
+}
