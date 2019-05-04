@@ -7,7 +7,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 1w5')
+console.log('SNAPSHOT 1w6')
 
 // [[ Variables ]] //
 
@@ -54,6 +54,7 @@ if ($title === 'Homepage | pwManager')
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             console.log('logged in as: ' + user.displayName)
+            $('.accountPlace').text('Welcome ' + user.displayName)
         }
     })
 } else if ($title === 'About | pwManager')
