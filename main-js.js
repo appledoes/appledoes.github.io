@@ -7,9 +7,11 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 1w7')
+console.log('SNAPSHOT 1w8')
 
 // [[ Variables ]] //
+var database = firebase.database();
+
 
 // ~ Elements ~ //
 var explanation = $('.explanation');
@@ -47,6 +49,18 @@ const importPage = function (page)
 
 }
 
+
+var user = firebase.auth().currentUser;
+var name, email, memberType, uid;
+
+if (user != null) {
+    name = user.displayName;
+    email = user.email;
+    memberType = user.memberType;
+    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+    // this value to authenticate with your backend server, if
+    // you have one. Use User.getToken() instead.
+}
 
 function writeUserData(userId, name, email, memberType) {
     firebase.database().ref('users/' + userId).set({
