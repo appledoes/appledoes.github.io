@@ -1,6 +1,6 @@
 ﻿// js1-index.js //
 
-setTimeout(function () { $('.contact-row').addClass('hidden'); }, 0.0001)
+setTimeout(function () { $('.contact-row').addClass('hidden'); }, 1)
 
 var xhr2 = new XMLHttpRequest();
 

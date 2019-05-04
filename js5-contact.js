@@ -2,5 +2,5 @@
 
 console.log('working');
 
-setTimeout(function () { $('.index-row').addClass('hidden'); }, 0.0001)
+setTimeout(function () { $('.index-row').addClass('hidden'); }, 1)
 
