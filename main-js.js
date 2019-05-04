@@ -7,7 +7,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 1w8')
+console.log('SNAPSHOT 1w9')
 
 // [[ Variables ]] //
 var database = firebase.database();
@@ -51,24 +51,26 @@ const importPage = function (page)
 
 
 var user = firebase.auth().currentUser;
-var name, email, memberType, uid;
-
-if (user != null) {
-    name = user.displayName;
-    email = user.email;
-    memberType = user.memberType;
-    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-    // this value to authenticate with your backend server, if
-    // you have one. Use User.getToken() instead.
-}
+var name, email, uid;
 
 function writeUserData(userId, name, email, memberType) {
     firebase.database().ref('users/' + userId).set({
         username: name,
         email: email,
-        memberType: memberType
     });
 }
+
+if (user != null) {
+    name = user.displayName;
+    email = user.email;
+    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+    // this value to authenticate with your backend server, if
+    // you have one. Use User.getToken() instead.
+
+    writeUserData(name, email, uid)
+}
+
+
 
 // [[ Check which title ]] //
 if ($title === 'Homepage | pwManager')
