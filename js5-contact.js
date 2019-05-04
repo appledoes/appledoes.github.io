@@ -1,6 +1,9 @@
 // js5-contact.js //
 
-console.log('working');
+(function () {
+    console.log('working');
 
-setTimeout(function () { $('.index-row').addClass('hidden'); }, 250)
+    setTimeout(function () { $('.index-row').addClass('hidden'); }, 250)
+})()
+
 

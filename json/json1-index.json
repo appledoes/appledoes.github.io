@@ -13,14 +13,19 @@
   ],
   "articles": [
     {
+      "header": "v1.1 alpha update",
+      "p1": "New webpage",
+      "p2": "Bug fixes",
+      "p3": "MOAR COLORS",
+      "p4": "New type of news section"
+
+    },
+    {
       "header": "v1.0 alpha update",
       "p1": "New article section",
       "p2": "New news section",
       "p3": "Bootstrap Layout",
       "p4": "First version"
-    },
-    {
-      "header": null
     },
     {
       "header":  null
@@ -63,7 +68,9 @@
     },
     {
       "header": "Sign up Now!",
-      "desc": "Signing up is easy, all you have to do is click on Account in the navigator."
+      "desc": "Signing up is easy, all you have to do is click on Account in the navigator or click on the link below",
+      "ahref": "https://appledoes.github.io/account/signup.html",
+      "a":  "Sign up"
     }
   ]
 }
