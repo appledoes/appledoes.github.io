@@ -4,14 +4,23 @@
 
 // Uses jQuery //
 
+var config = {
+    apiKey: "AIzaSyBnrAhY_w3VVnjHc2_UeJJAt2G-FWpAjwM",
+    authDomain: "pwmanager-91c7e.firebaseapp.com",
+    databaseURL: "https://pwmanager-91c7e.firebaseio.com",
+    projectId: "pwmanager-91c7e",
+    storageBucket: "pwmanager-91c7e.appspot.com",
+    messagingSenderId: "200620870742"
+};
+firebase.initializeApp(config);
 
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 2')
+console.log('SNAPSHOT 2w1')
 
 // [[ Variables ]] //
-
+var firebase = firebase.database()
 
 // ~ Elements ~ //
 var explanation = $('.explanation');
@@ -47,25 +56,6 @@ const importPage = function (page) {
 }
 
 
-var user = firebase.auth().currentUser;
-var name, email, uid;
-
-function writeUserData(userId, name, email, memberType) {
-    firebase.database().ref('users/' + userId).set({
-        username: name,
-        email: email,
-    });
-}
-
-if (user != null) {
-    name = user.displayName;
-    email = user.email;
-    uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
-    // this value to authenticate with your backend server, if
-    // you have one. Use User.getToken() instead.
-
-    writeUserData(name, email, uid)
-}
 
 
 
