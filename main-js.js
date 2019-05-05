@@ -8,10 +8,9 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 2w2')
+console.log('SNAPSHOT 2w3')
 
 // [[ Variables ]] //
-var firebase = firebase.database()
 
 // ~ Elements ~ //
 var explanation = $('.explanation');
