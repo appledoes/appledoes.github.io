@@ -8,7 +8,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 3')
+console.log('SNAPSHOT 3w1')
 
 // [[ Variables ]] //
 
