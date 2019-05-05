@@ -4,5 +4,8 @@ setTimeout(function () { $('.contact-row').css({ 'display': 'none' }); $('.about
 
 
 const buttonFunction5 = function () {
+    location.replace('https://appledoes.github.io')
     firebase.auth().signOut();
-}
+
+
+};

@@ -12,6 +12,7 @@ console.log('SNAPSHOT 2w3')
 
 // [[ Variables ]] //
 
+
 // ~ Elements ~ //
 var explanation = $('.explanation');
 
@@ -46,6 +47,8 @@ const importPage = function (page) {
 }
 
 
+const firebasedb = firebase.database()
+
 
 
 
@@ -54,6 +57,11 @@ if ($title === 'Homepage | pwManager') {
     importPage('index');
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
+            const userdb = firebasedb.ref(user.uid)
+            userdb.push({
+                working: true
+            })
+
             console.log('logged in as: ' + user.displayName)
             console.log('userid: ' + user.uid)
             $('.accountPlace').text('Welcome back ' + user.displayName + '!')
