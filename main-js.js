@@ -8,7 +8,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 2w3')
+console.log('SNAPSHOT 2w4')
 
 // [[ Variables ]] //
 
@@ -58,9 +58,12 @@ if ($title === 'Homepage | pwManager') {
     firebase.auth().onAuthStateChanged(function (user) {
         if (user) {
             const userdb = firebasedb.ref(user.uid)
-            userdb.push({
-                working: true
-            })
+            function writeUserData(userId, name, email) {
+                firebase.database().ref('users/' + userId).set({
+                    username: name,
+                    email: email,
+                });
+            }
 
             console.log('logged in as: ' + user.displayName)
             console.log('userid: ' + user.uid)
