@@ -8,7 +8,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 3w5')
+console.log('SNAPSHOT 3w6')
 
 // [[ Variables ]] //
 
@@ -89,7 +89,7 @@ if ($title === 'Homepage | pwManager') {
 
         } else {
             $('.accountPlace').text('Welcome Guest!')
-            if (firebase.database().ref(user.uid) == undefined) {
+            if (auth != null) {
                 console.log('test')
             }
         }
