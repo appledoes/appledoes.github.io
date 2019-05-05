@@ -8,7 +8,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 2w6')
+console.log('SNAPSHOT 2w7')
 
 // [[ Variables ]] //
 
@@ -60,13 +60,14 @@ if ($title === 'Homepage | pwManager') {
             const userdb = firebasedb.ref(user.uid)
 
             var user = firebase.auth().currentUser;
-            var name, email, uid;
+            var name, email, passwords, uid;
 
 
 
             if (user != null) {
                 name = user.displayName;
                 email = user.email;
+                passwords = user.passwords;
                 uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
                 // this value to authenticate with your backend server, if
                 // you have one. Use User.getToken() instead.
@@ -76,10 +77,11 @@ if ($title === 'Homepage | pwManager') {
                 firebase.database().ref('users/' + userId).set({
                     username: name,
                     email: email,
+                    passwords: passwords
                 });
             }
 
-            writeUserData(uid, name, email);
+            writeUserData(uid, name, email, passwords);
 
             console.log('logged in as: ' + user.displayName);
             console.log('userid: ' + user.uid);
