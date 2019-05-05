@@ -8,7 +8,7 @@
 // [[ Title ]] //
 var $title = $('title').text();
 console.log('Current page: ' + $title);
-console.log('SNAPSHOT 2w5')
+console.log('SNAPSHOT 2w6')
 
 // [[ Variables ]] //
 
@@ -79,7 +79,7 @@ if ($title === 'Homepage | pwManager') {
                 });
             }
 
-            writeUserData(name, email, uid);
+            writeUserData(uid, name, email);
 
             console.log('logged in as: ' + user.displayName);
             console.log('userid: ' + user.uid);
