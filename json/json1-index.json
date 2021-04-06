@@ -40,7 +40,7 @@
   ],
   "news": [
     {
-      "header": "So I have been working on something...",
+      "header": "???",
       "p1": "pwManager is not well coded, has a million bugs and is annoyingly complex for what it is. I have been working on a successor to pwManager which will soon replace this domain.",
       "p2": "It's called PassVault, and is better in every way to pwManager. It's lighter, uses ReactJS and Bootstrap so it's easy to use and more interactive. After nearly two years, pwManager will stop dominating this domain.",
 	  "a1": "The official beta date will be the 5th of May, 2021. This was written on 06/04/21"
