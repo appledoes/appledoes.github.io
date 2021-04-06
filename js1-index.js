@@ -68,6 +68,13 @@
                 makeNewli.makeli();
             };
 
+	    for (i = 1; i < 3; i++) {
+                var makeNewli = new ar('ns1', 'p', i, '.ns1-ul', 'inline', 'The official beta date will be the 5th of May, 2021. This was written on 06/04/21');
+
+                makeNewli.makeli();
+            };
+
+
             for (i = 1; i < 3; i++) {
                 var makeNewli = new ar('ns2', 'p', i, '.ns2-ul', 'inline', undefined);
 
@@ -139,10 +146,11 @@
 
             $('.ns1_p1').text(responseObject.news[0].p1);
             $('.ns1_p2').text(responseObject.news[0].p2);
+	    $('.ns1_a1').text(responseObject.news[0].a1);
 
             $('.ns2_p1').text(responseObject.news[1].p1);
             $('.ns2_p2').text(responseObject.news[1].p2);
-            $('.ns2_a1').text(responseObject.news[1].a1)
+            $('.ns2_a1').text(responseObject.news[1].a1);
 
             $exp_h3.text(responseObject.topic[0].t_exp);
             $exp_h4.text(responseObject.topic[1].b_exp);
