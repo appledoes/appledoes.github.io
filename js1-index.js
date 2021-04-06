@@ -62,12 +62,19 @@
                 makeNewli.makeli();
             };
 
-	    for (i = 1; i < 4; i++) {
-                var makeNewli = new ar('ns1', 'p', i, '.ns1-ul', 'inline', 'The official beta date will be the 5th of May, 2021. This was written on 06/04/21');
+	    for (i = 1; i < 3; i++) {
+                var makeNewli = new ar('ns1', 'p', i, '.ns1-ul', 'inline', undefined);
 
                 makeNewli.makeli();
             };
 
+
+
+            for (i = 1; i < 2; i++) {
+                var makeNewli = new ar('ns1', 'p', i, '.ns1-ul', 'inline', 'The official beta date will be the 5th of May, 2021. This was written on 06/04/21');
+
+                makeNewli.makeli();
+            };
 
             for (i = 1; i < 3; i++) {
                 var makeNewli = new ar('ns2', 'p', i, '.ns2-ul', 'inline', undefined);
