@@ -139,7 +139,7 @@
 
             $('.ns1_p1').text(responseObject.news[0].p1);
             $('.ns1_p2').text(responseObject.news[0].p2);
-	    $('.ns1_a1').text(responseObject.news[0].a1);
+	    $('.ns1_a1').text(responseObject.news[0].p3);
 
             $('.ns2_p1').text(responseObject.news[1].p1);
             $('.ns2_p2').text(responseObject.news[1].p2);
